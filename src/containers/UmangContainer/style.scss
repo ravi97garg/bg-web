@@ -1,0 +1,278 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.umang-landing-page {
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        video.umang-bg-video {
+            object-fit: cover;
+            height: 100%;
+        }
+        .banner-overlay {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(221, 51, 51, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-transform: uppercase;
+            background: linear-gradient(
+                    to right top,
+                    transparent 33%,
+                    rgba(100, 51, 51, 0.9) 33%,
+                    rgba(100, 30, 30, 0.9) 66%,
+                    transparent 66%
+                ),
+                rgba(221, 51, 51, 0.5);
+            background-size: 3px 3px;
+            .title {
+                font-weight: bold;
+                font-size: 72px;
+                color: white;
+                line-height: 140%;
+            }
+            .line-1 {
+                font-size: 21px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                line-height: 140%;
+                margin-bottom: 20px;
+            }
+            .line-2 {
+                margin-bottom: 20px;
+                line-height: 160%;
+                padding: 20px;
+            }
+        }
+    }
+    .about-container {
+        color: white;
+        background-color: #1d2152;
+        display: block;
+        @include for-desktop {
+            display: flex;
+        }
+        @include for-tablet {
+            display: flex;
+        }
+        .about-1 {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            .title {
+                font-weight: bold;
+                line-height: 160%;
+                font-size: 36px;
+            }
+            .desc {
+                line-height: 160%;
+                p {
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+        .about-2 {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            @include for-desktop {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            @include for-tablet {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                line-height: 160%;
+                .heading {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .detail {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    a {
+                        color: inherit;
+                    }
+                }
+            }
+            .poster img {
+                width: 150px;
+                @include for-phone {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .event-container {
+        .title {
+            color: #1d2152;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 40px 0;
+        }
+        .event-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @include for-phone {
+                display: block;
+            }
+            .card {
+                flex-basis: 40%;
+                position: relative;
+                height: 350px;
+                margin: 40px;
+                color: white;
+                .detail {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    line-height: 160%;
+                    .heading {
+                        font-size: 36px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                    .desc-1 {
+                        font-weight: bold;
+                        font-size: 120%;
+                    }
+                }
+            }
+        }
+    }
+    .fest-details {
+        display: flex;
+        background-color: #1d2152;
+        @include for-phone {
+            display: block;
+        }
+        .part {
+            flex-basis: 50%;
+            color: white;
+            text-align: center;
+            padding: 80px;
+            box-sizing: border-box;
+            @include for-tablet {
+                padding: 50px;
+            }
+            @include for-phone {
+                padding: 30px;
+            }
+            .title {
+                font-size: 48px;
+                line-height: 160%;
+                font-weight: bold;
+            }
+            .up-title {
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: yellow;
+            }
+            img {
+                width: 100%;
+            }
+            .para {
+                line-height: 160%;
+            }
+            &.poster {
+                @include for-phone {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .action-container {
+        background-color: #f4f4f4;
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        @include for-phone {
+            display: block;
+        }
+        .plate-1 {
+            flex-basis: 50%;
+            line-height: 160%;
+            margin-bottom: 40px;
+            .title {
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 160%;
+            }
+            .grey {
+                color: #444444;
+            }
+            .red {
+                color: #d12326;
+            }
+        }
+        .plate-2 {
+            flex-basis: 30%;
+            background-color: white;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0 0;
+            box-sizing: border-box;
+            .heading {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .price {
+                font-weight: bold;
+                font-size: 48px;
+                color: #d12326;
+                margin: 20px 0;
+            }
+            ul.features {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li:before {
+                    content: "✔️  ";
+                }
+                li {
+                    margin: 10px 0;
+                }
+            }
+            .purchase {
+                width: 100%;
+                margin-top: 20px;
+                button {
+                    width: 100%;
+                    border: 0;
+                    background-color: #1d2152;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 16px;
+                }
+            }
+        }
+    }
+}

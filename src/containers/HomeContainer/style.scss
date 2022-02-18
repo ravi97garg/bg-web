@@ -1,0 +1,383 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.home-container {
+    & > .banner {
+        width: 100%;
+        height: 100vh;
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $desktop-header-height $desktop-spacing;
+        box-sizing: border-box;
+        position: relative;
+        @include for-tablet {
+            flex-direction: column;
+            height: 100%;
+            padding: $tablet-header-height $tablet-spacing
+        }
+        @include for-phone {
+            flex-direction: column;
+            height: 100%;
+            padding: $mobile-header-height $mobile-spacing;
+        }
+        .quote-container {
+            color: $white;
+            width: 500px;
+            -webkit-transition: opacity 2s ease-in;
+            -moz-transition: opacity 2s ease-in;
+            -o-transition: opacity 2s ease-in;
+            -ms-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+            @include for-tablet {
+                width: 80%;
+                margin: auto;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            @include for-phone {
+                width: 90%;
+                margin: auto;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .text {
+                font-size: 32px;
+                line-height: 150%;
+                @include for-tablet {
+                    font-size: 28px;
+                }
+                @include for-phone {
+                    font-size: 24px;
+                }
+            }
+            .author {
+                font-family: $secondaryFont;
+                line-height: 200%;
+                text-transform: uppercase;
+            }
+        }
+        .bg-img {
+            width: 400px;
+            @include for-tablet {
+                width: 80%;
+                margin-top: 40px;
+            }
+            @include for-phone {
+                width: 90%;
+                margin-top: 40px;
+            }
+        }
+        .indicator {
+            .bullet {
+                font-size: 48px;
+            }
+            @include for-tablet {
+                width: fit-content;
+                margin: auto;
+            }
+            @include for-phone {
+                width: fit-content;
+                margin: auto;
+            }
+        }
+    }
+
+    #practical-section {
+        padding: $desktop-header-height $desktop-spacing;
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing;
+            text-align: justify;
+        }
+        .topic-container {
+            margin-top: 30px;
+            .topic {
+                display: inline-block;
+                margin-right: 12px;
+                margin-bottom: 18px;
+                @include for-tablet {
+                    margin-right: 9px;
+                    margin-bottom: 14px;
+                }
+                @include for-phone {
+                    margin-right: 6px;
+                    margin-bottom: 9px;
+                }
+            }
+        }
+        .intro {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 30px;
+        }
+    }
+
+    #leader-section {
+        padding: $desktop-header-height $desktop-spacing;
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing;
+        }
+        padding-bottom: 0;
+        .leader-container {
+            display: flex;
+            justify-content: space-between;
+            -webkit-transition: opacity 2s ease-in;
+            -moz-transition: opacity 2s ease-in;
+            -o-transition: opacity 2s ease-in;
+            -ms-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+            align-items: center;
+            @include for-phone {
+                flex-direction: column;
+            }
+            img {
+                @include for-desktop {
+                    width: 500px;
+                }
+                @include for-tablet {
+                    width: 300px;
+                }
+                @include for-phone {
+                    width: 100%;
+                }
+            }
+            .quote-container {
+                width: 500px;
+                font-size: 21px;
+                line-height: 160%;
+                display: flex;
+                flex-direction: column;
+                @include for-tablet {
+                    width: 400px;
+                }
+                @include for-phone {
+                    align-items: center;
+                    text-align: justify;
+                    width: 100%;
+                }
+                .quote {
+                    font-size: 21px;
+                    line-height: 160%;
+                }
+                .author {
+                    font-family: $secondaryFont;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 160%;
+                }
+                .desig {
+                    font-size: 14px;
+                    line-height: 120%;
+                    font-family: $secondaryFont;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    #wisdom-section {
+        padding-top: $desktop-header-height;
+        @include for-tablet {
+            padding-top: $tablet-header-height;
+        }
+        @include for-phone {
+            padding-top: $mobile-header-height;
+        }
+        & > .banner {
+            width: 100%;
+            margin-bottom: $desktop-header-height;
+            @include for-tablet {
+                margin-bottom: $tablet-header-height;
+            }
+            @include for-phone {
+                margin-bottom: $mobile-header-height;
+            }
+        }
+        & > .header {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            @include for-tablet {
+                align-items: center;
+                width: 80%;
+            }
+            @include for-phone {
+                align-items: center;
+                width: 90%;
+            }
+            .subheading {
+                text-transform: uppercase;
+                font-family: $secondaryFont;
+                font-size: 21px;
+                font-weight: 500;
+            }
+            .quote {
+                line-height: 154%;
+                margin-top: 12px;
+            }
+            .author {
+                font-family: $secondaryFont;
+                line-height: 154%;
+            }
+        }
+        .row-1 {
+            padding: $desktop-header-height $desktop-spacing;
+            display: flex;
+            justify-content: space-between;
+            @include for-tablet {
+                padding: $tablet-header-height $tablet-spacing;
+            }
+            @include for-phone {
+                flex-direction: column;
+                align-items: center;
+                padding: $mobile-header-height $mobile-spacing;
+            }
+        }
+        .row-2 {
+            display: flex;
+            padding: 0 $desktop-spacing;
+            width: 66%;
+            justify-content: space-around;
+            margin: auto;
+            @include for-tablet {
+                padding: 0 $tablet-spacing;
+            }
+            @include for-phone {
+                flex-direction: column;
+                align-items: center;
+                width: unset;
+                padding: 0 $mobile-spacing;
+            }
+        }
+        .card {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            line-height: 160%;
+            font-size: 21px;
+            @include for-phone {
+                margin-top: 40px;
+            }
+            & > .img-wrapper {
+                img {
+                    width: 70%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+        }
+        // .btn-group {
+        //     margin: 50px auto;
+        //     width: fit-content;
+        //     .btn:first-child {
+        //         margin-right: 40px;
+        //     }
+        // }
+    }
+
+    #testimonials {
+        padding: $desktop-header-height $desktop-spacing;
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing
+        }
+        .subheading {
+            text-transform: uppercase;
+            font-family: $secondaryFont;
+            font-size: 21px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .test-container {
+            display: flex;
+            justify-content: space-between;
+            -webkit-transition: opacity 2s ease-in;
+            -moz-transition: opacity 2s ease-in;
+            -o-transition: opacity 2s ease-in;
+            -ms-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+            align-items: center;
+            @include for-tablet {
+                margin-top: 20px;
+            }
+            @include for-phone {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+            img {
+                width: 500px;
+                @include for-tablet {
+                    width: 400px;
+                }
+                @include for-phone {
+                    width: 100%;
+                }
+            }
+            .quote-container {
+                width: 500px;
+                font-size: 21px;
+                line-height: 160%;
+                display: flex;
+                flex-direction: column;
+                @include for-tablet {
+                    width: 400px;
+                }
+                @include for-phone {
+                    width: 100%;
+                }
+                .quote {
+                    font-size: 21px;
+                    line-height: 160%;
+                }
+                .author {
+                    font-family: $secondaryFont;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 160%;
+                }
+                .desig {
+                    font-size: 14px;
+                    line-height: 120%;
+                    font-family: $secondaryFont;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    .btn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    92% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

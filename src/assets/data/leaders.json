@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Mahatma Gandhi",
+        "desig": "Father of India",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113496/leader1_flenuo.png",
+        "saying": "When doubts haunt me, when disappointments stare me in the face, and I see not one ray of hope on the horizon, I turn to Bhagavad-gita and find a verse to comfort me; and I immediately begin to smile in the midst of overwhelming sorrow."
+    },
+    {
+        "name": "Will Smith",
+        "desig": "American Actor",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113497/leader2_jsutn5.png",
+        "saying": "I am 90 % through the Bhagavad Gita... My inner Arjuna is being channelled."
+    },
+    {
+        "name": "Annie Besant",
+        "desig": "Philantropist and Philosopher",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113496/leader3_xjwo8c.png",
+        "saying": "That the spiritual man need not be a recluse, that union with the divine Life may be achieved and maintained in the midst of worldly affairs, that the obstacles to that union lie not outside us but within us—such is the central lesson of the Bhagavad-Gītā."
+    },
+    {
+        "name": "Tulsi Gabbard",
+        "desig": "US Congress-woman",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113497/leader4_jzldkn.png",
+        "saying": "In this chaotic time, when no one can say what tomorrow looks like, one can find certainty, strength and peace in Bhagavad Gita."
+    },
+    {
+        "name": "Aldous Huxley",
+        "desig": "American Author and Philosopher",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113497/leader5_dr713y.png",
+        "saying": "(The Bhagavad Gita is) one of the most clear and comprehensive summaries of perennial philosophy ever revealed; hence its enduring value is subject not only to India but to all of humanity."
+    },
+    {
+        "name": "Albert Einstein",
+        "desig": "Nobel laureate for Physics and Renowned Scientist",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113498/leader6_ltbins.png",
+        "saying": "When I read the Bhagavad Gita and reflect about how God created this universe everything else seems so superfluous."
+    },
+    {
+        "name": "David Henry Thoreau",
+        "desig": "American natualist and Poet",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113501/leader7_zkuxfx.png",
+        "saying": "In the morning I bathe my intellect in the stupendous and cosmogonal philosophy of the Bhagavad Gita in comparison with which our modern world and its literature seem puny and trivial."
+    },
+    {
+        "name": "Robert Oppenheimer",
+        "desig": "American Physicist and Director of the Manhattan Project",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113499/leader8_m35za9.png",
+        "saying": "I remembered the line from the Hindu scripture, the Bhagavad Gita; Vishnu is trying to persuade the Prince that he should do his duty and, to impress him, takes on his multi-armed form and says, 'Now I am become Death, the destroyer of worlds.'"
+    },
+    {
+        "name": "Ralph Waldo Emerson",
+        "desig": "American essayist and philosopher",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113500/leader9_v8h830.png",
+        "saying": "I owed a magnificent day to the Bhagavad-Gita. It was as if an empire spoke to us, nothing small or unworthy, but large, serene, consistent,the voice of an old intelligence which in another age and climate had pondered and thus disposed of the same questions which exercise us."
+    }
+]

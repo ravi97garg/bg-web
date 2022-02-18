@@ -1,0 +1,40 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .text {
+        position: absolute;
+        padding: 50px $desktop-spacing;
+        box-sizing: border-box;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        color: $white;
+        @include for-tablet {
+            padding: 50px $tablet-spacing;
+        }
+        @include for-phone {
+            padding: 40px $mobile-spacing;
+        }
+        .title {
+            font-size: 72px;
+            line-height: 86.5px;
+            font-weight: bolder;
+            @include for-phone {
+                font-size: 48px;
+                line-height: 130%;
+            }
+        }
+        .author {
+            font-size: 24px;
+            line-height: 28.8px;
+            font-family: $secondaryFont;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+    }
+}

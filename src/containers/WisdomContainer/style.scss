@@ -1,0 +1,233 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.wisdom-container {
+    #included-section {
+        @include for-desktop {
+            padding: $desktop-header-height $desktop-spacing;
+        }
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing;
+            padding-bottom: 0;
+        }
+        padding-bottom: 0;
+        .cards {
+            margin-top: 50px;
+            .card {
+                display: flex;
+                align-items: center;
+                margin: 50px;
+                @include for-phone {
+                    flex-direction: column;
+                    margin: 50px 0;
+                }
+                img {
+                    width: 33%;
+                    @include for-phone {
+                        width: 100%;
+                    }
+                }
+                .text {
+                    width: 66%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 18px;
+                    line-height: 140%;
+                    @include for-phone {
+                        width: 100%;
+                        text-align: justify;
+                    }
+                    p {
+                        margin-top: 12px;
+                    }
+                }
+            }
+            .right {
+                .text {
+                    order: 1;
+                    margin-right: 60px;
+                    @include for-phone {
+                        order: unset;
+                        margin-right: 0;
+                    }
+                }
+                img {
+                    order: 2;
+                    @include for-phone {
+                        order: unset;
+                    }
+                }
+            }
+            .left {
+                .text {
+                    order: 2;
+                    margin-left: 60px;
+                    @include for-phone {
+                        order: unset;
+                        margin-left: 0;
+                    }
+                }
+                img {
+                    order: 1;
+                    @include for-phone {
+                        order: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    #motivation-section {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include for-desktop {
+            padding: $desktop-header-height $desktop-spacing;
+        }
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing;
+        }
+        .heading {
+            margin-bottom: 30px;
+        }
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #pricing-section {
+        & > .banner {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            .motivation {
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+                color: $white;
+                padding-left: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                @include for-phone {
+                    padding: $mobile-spacing;
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                }
+                .quote {
+                    font-size: 48px;
+                    line-height: 72px;
+                    width: 80%;
+                    @include for-phone {
+                        width: 100%;
+                        font-size: 32px;
+                        line-height: 150%;
+                    }
+                }
+                .author {
+                    margin-top: 20px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+
+        & > .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: $desktop-header-height $desktop-spacing;
+            box-sizing: border-box;
+            @include for-tablet {
+                padding: $tablet-header-height $tablet-spacing;
+            }
+            @include for-phone {
+                padding: $mobile-header-height $mobile-spacing;
+            }
+            .selector-btn {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+
+            .price-info {
+                display: flex;
+                width: 100%;
+                @include for-phone {
+                    flex-direction: column;
+                }
+                img {
+                    width: 50%;
+                    @include for-phone {
+                        width: 100%;
+                    }
+                }
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 21px;
+                    color: $dark;
+                    line-height: 140%;
+                    @include for-phone {
+                        font-size: 16px;
+                        align-items: center;
+                    }
+                    .cost {
+                        font-weight: bold;
+                        font-size: 56px;
+                        line-height: 67.2px;
+                    }
+                    .btn {
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    #enroll-form {
+        box-sizing: border-box;
+        @include for-desktop {
+            padding: 0 $desktop-spacing $desktop-header-height $desktop-spacing;
+        }
+        @include for-tablet {
+            padding: 0 $tablet-spacing $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: 0 $mobile-spacing $mobile-header-height $mobile-spacing;
+        }
+        .form {
+            width: 600px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 18px;
+            line-height: 140%;
+            .input {
+                margin-top: 12px;
+            }
+            .message {
+                margin-top: 12px;
+                margin-bottom: 4px;
+            }
+        }
+        .half {
+            width: 49%;
+        }
+        .full {
+            width: 100%;
+        }
+    }
+}

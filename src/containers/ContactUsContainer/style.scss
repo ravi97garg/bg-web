@@ -1,0 +1,48 @@
+@import "../../styles/constants.scss";
+@import "../../styles/mixins.scss";
+
+.contact-container {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include for-desktop {
+            padding: $desktop-header-height $desktop-spacing;
+        }
+        @include for-tablet {
+            padding: $tablet-header-height $tablet-spacing;
+        }
+        @include for-phone {
+            padding: $mobile-header-height $mobile-spacing;
+        }
+        input {
+            margin: 4px;
+            width: 40%;
+            @include for-tablet {
+                width: 60%;
+            }
+            @include for-phone {
+                width: 80%;
+            }
+        }
+        textarea {
+            width: 40%;
+            margin: 4px;
+            height: 200px;
+            font-family: $primaryFont;
+            padding: 4px 12px;
+            font-size: 18px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid $dark;
+            background-color: $white;
+            @include for-tablet {
+                width: 60%;
+            }
+            @include for-phone {
+                width: 80%;
+            }
+        }
+    }
+}
