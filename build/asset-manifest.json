@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fc81477d.chunk.css",
+    "main.js": "/static/js/main.da9cb3b2.chunk.js",
+    "main.js.map": "/static/js/main.da9cb3b2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5fd133cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5fd133cb.js.map",
+    "static/js/2.4af7e02e.chunk.js": "/static/js/2.4af7e02e.chunk.js",
+    "static/js/2.4af7e02e.chunk.js.map": "/static/js/2.4af7e02e.chunk.js.map",
+    "static/js/3.dab5d6f2.chunk.js": "/static/js/3.dab5d6f2.chunk.js",
+    "static/js/3.dab5d6f2.chunk.js.map": "/static/js/3.dab5d6f2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.fc81477d.chunk.css.map": "/static/css/main.fc81477d.chunk.css.map",
+    "static/js/2.4af7e02e.chunk.js.LICENSE.txt": "/static/js/2.4af7e02e.chunk.js.LICENSE.txt",
+    "static/media/1606879754.363b89d8.png": "/static/media/1606879754.363b89d8.png",
+    "static/media/1606995529.535b800d.png": "/static/media/1606995529.535b800d.png",
+    "static/media/main.scss": "/static/media/Quicksand-SemiBold.d4f6bc51.ttf",
+    "static/media/bg-english.a563c130.png": "/static/media/bg-english.a563c130.png",
+    "static/media/certificate.8f90cb4e.jpg": "/static/media/certificate.8f90cb4e.jpg",
+    "static/media/fest.5a80bef7.png": "/static/media/fest.5a80bef7.png",
+    "static/media/firework.a47a30a1.svg": "/static/media/firework.a47a30a1.svg",
+    "static/media/iyf-logo.838b78f8.png": "/static/media/iyf-logo.838b78f8.png",
+    "static/media/job-interview.d215fb57.svg": "/static/media/job-interview.d215fb57.svg",
+    "static/media/josh-hild-jdTdvF6fDus-unsplash.71e39c1c.jpg": "/static/media/josh-hild-jdTdvF6fDus-unsplash.71e39c1c.jpg",
+    "static/media/meet.df8454b0.jpg": "/static/media/meet.df8454b0.jpg",
+    "static/media/mentor.af505840.svg": "/static/media/mentor.af505840.svg",
+    "static/media/online-course.4e31ec96.svg": "/static/media/online-course.4e31ec96.svg",
+    "static/media/text.4c0efa9d.svg": "/static/media/text.4c0efa9d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fd133cb.js",
+    "static/js/2.4af7e02e.chunk.js",
+    "static/css/main.fc81477d.chunk.css",
+    "static/js/main.da9cb3b2.chunk.js"
+  ]
+}
