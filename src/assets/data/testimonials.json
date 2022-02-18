@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Mahatma Gandhi",
+        "desig": "Father of India",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113496/leader1_flenuo.png",
+        "saying": "When doubts haunt me, when disappointments stare me in the face, and I see not one ray of hope on the horizon, I turn to Bhagavad-gita and find a verse to comfort me; and I immediately begin to smile in the midst of overwhelming sorrow."
+    },
+    {
+        "name": "Will Smith",
+        "desig": "American Actor",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113497/leader2_jsutn5.png",
+        "saying": "I am 90 % through the Bhagavad Gita... My inner Arjuna is being channelled."
+    },
+    {
+        "name": "Annie Besant",
+        "desig": "Philantropist and Philosopher",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113496/leader3_xjwo8c.png",
+        "saying": "That the spiritual man need not be a recluse, that union with the divine Life may be achieved and maintained in the midst of worldly affairs, that the obstacles to that union lie not outside us but within us—such is the central lesson of the Bhagavad-Gītā."
+    },
+    {
+        "name": "Tulsi Gabbard",
+        "desig": "US Congress-woman",
+        "image": "https://res.cloudinary.com/dnuq1lgqs/image/upload/v1607113497/leader4_jzldkn.png",
+        "saying": "In this chaotic time, when no one can say what tomorrow looks like, one can find certainty, strength and peace in Bhagavad Gita."
+    }
+]

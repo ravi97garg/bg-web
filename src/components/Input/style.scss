@@ -1,0 +1,18 @@
+@import '../../styles/constants.scss';
+
+.input-container {
+    padding: 4px 12px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid $dark;
+    font-family: $primaryFont;
+    background-color: $white;
+}
+
+.radio {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
