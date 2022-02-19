@@ -131,6 +131,9 @@ class UmangVolunteerContainer extends React.Component {
     // console.log(name, email, contact, gender, location, registeredBy, paid);
     if (name && email && contact && location && gender && registeredBy !== "0") {
       //   console.log(name, email, contact, gender, location, registeredBy, paid);
+      this.setState({
+        disableBtn: true
+      });
       createNewRegistration({
         name,
         email,
@@ -155,6 +158,9 @@ class UmangVolunteerContainer extends React.Component {
           alert(
             `Registration successfully done. Ticket ID is ${res.data.user.uuid}.`
           );
+          this.setState({
+            disableBtn: false
+          });
         })
         .catch((e) => {
           alert("Error:", JSON.stringify(e));
@@ -174,6 +180,7 @@ class UmangVolunteerContainer extends React.Component {
       volunteers,
       gender,
       remarks,
+      disableBtn,
     } = this.state;
     return (
       <div className="umang-container">
@@ -255,6 +262,7 @@ class UmangVolunteerContainer extends React.Component {
             textColor={COLORS.WHITE}
             bgColor={COLORS.YELLOW}
             outlinePt={2}
+            disabled={disableBtn}
           >
             Register
           </RoundBtn>

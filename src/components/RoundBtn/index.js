@@ -72,6 +72,7 @@ class RoundBtn extends React.Component {
             children,
             outlinePt,
             onClick,
+            disabled,
         } = this.props;
         const {
             bgColor,
@@ -89,6 +90,7 @@ class RoundBtn extends React.Component {
                     color: textColor,
                     border: `${outlinePt}px solid ${outlineColor}`
                 }}
+                disabled={disabled}
             >
                 {children}
             </button>
