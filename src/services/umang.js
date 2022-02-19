@@ -8,8 +8,8 @@ import {
 } from "../constants";
 
 // const BASE_URL = 'https://iyfapi.herokuapp.com';
-const BASE_URL = "http://localhost:59635";
-// const BASE_URL = "https://arcane-fjord-22981.herokuapp.com";
+// const BASE_URL = "http://localhost:59635";
+const BASE_URL = "https://arcane-fjord-22981.herokuapp.com";
 
 export const createNewRegistration = (userDetails) => {
   return axios.post(BASE_URL + "/users", userDetails);
