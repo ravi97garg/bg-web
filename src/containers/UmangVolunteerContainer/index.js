@@ -52,6 +52,7 @@ class UmangVolunteerContainer extends React.Component {
           "Dev Kumar",
           "Dwarikanath Hrishikesh Das",
           "Gaurav Rajput",
+          "Hanu Shukla",
           "Harsh Singhal",
           "Harshdeep Singh",
           "Harshit Garg",
